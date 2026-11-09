@@ -76,7 +76,7 @@ if selected_tariff_col in final_input_df.columns:
 
 # Make prediction 
 if st.sidebar.button('Prediksi Tagihan'): 
-try: 
+ try: 
 prediction = model.predict(final_input_df) 
 # Use the new DataFrame name 
 st.subheader('Hasil Prediksi Tagihan Listrik:') 
