@@ -22,14 +22,7 @@ def user_input_features():
     month_name = st.sidebar.selectbox('Bulan', ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']) 
     tariff_class = st.sidebar.selectbox('Kelas Tarif', ['R1', 'R2', 'R3']) 
  
-    data = { 
-        'kwh': kwh, 
-        'ac_units': ac_units, 
-        'ac_hours_per_day': ac_hours_per_day, 
-        'family_size': family_size, 
-        'month_name': month_name, 
-        'tariff_class': tariff_class 
-    } 
+    data = {'kwh': kwh, 'ac_units': ac_units, 'ac_hours_per_day': ac_hours_per_day, 'family_size': family_size, 'month_name': month_name, 'tariff_class': tariff_class} 
     features = pd.DataFrame(data, index=[0]) 
     return features 
  
